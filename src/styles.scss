@@ -1,0 +1,38 @@
+$primary-color: #ffcc00;
+$secondary-color: #1e1e1e;
+$text-color: #fff;
+
+$font-stack: "Poppins", sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $secondary-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+// Buttons
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+  color: #000;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: $secondary-color;
+  }
+}
